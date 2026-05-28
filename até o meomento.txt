@@ -1,0 +1,3472 @@
+criar um sistema de auto peças cadastro, vendas e estoque 
+
+Cada intem com sua pagina 
+
+Pagina index  login e senha com pagina inicial
+
+pagina Cadastro: Cliente, peças e fornecedores 
+Pagina vendas : buscar as informaçoe 
+Pagina estoque: Entrada de peças e saida de peças com pedidos
+Pagina Relatorio: Venda, cliente e estoque
+Pagina diverso: cadastro de usuario e outra configuraçoe do sistema
+Pagina administrativa: dash de vendas, metas, saldo, estoque, caixa  entre outro 
+Paxina caixa: pagamentos 
+
+Usuario: adminitrativo tem poder de consultar todas as informaçoes 
+Usuario vendedor: só pode entrar na pagina de vendas
+Usuario Estoque: só pode entrar na pagina do estoque 
+
+
+Banco de dados oline 
+
+
+An_99092137*
+
+
+
+
+Estrutura Completa do Sistema de Auto Peças (Web + Banco Online)
+Tecnologias Recomendadas
+Backend
+•	Node.js 
+•	Express.js 
+Frontend
+•	React
+ou 
+•	Next.js 
+Banco de Dados Online
+•	PostgreSQL
+Hospedado em: 
+•	Supabase
+ou 
+•	Railway 
+Autenticação
+•	Login com: 
+o	usuário 
+o	senha criptografada 
+o	controle de permissões 
+________________________________________
+Estrutura do Sistema
+1. Página Inicial (Index)
+
+
+
+8
+Funções
+•	Tela de Login 
+•	Recuperar senha 
+•	Logo da empresa 
+•	Dashboard resumido após login 
+•	Controle de sessão 
+________________________________________
+2. Página Cadastro
+
+
+
+7
+Cadastro de Clientes
+Campos:
+•	Nome 
+•	CPF/CNPJ 
+•	Telefone 
+•	WhatsApp 
+•	E-mail 
+•	Endereço completo 
+•	Limite de crédito 
+•	Observações 
+Cadastro de Peças
+Campos:
+•	Código interno 
+•	Código de barras 
+•	Nome da peça 
+•	Marca 
+•	Categoria 
+•	Fabricante 
+•	Aplicação 
+•	Similaridade de peças 
+•	Preço de custo 
+•	Preço de venda 
+•	Estoque mínimo 
+•	Foto da peça 
+Cadastro de Fornecedores
+Campos:
+•	Razão social 
+•	CNPJ 
+•	Telefone 
+•	E-mail 
+•	Endereço 
+•	Contato responsável 
+________________________________________
+3. Página de Vendas
+
+
+
+7
+Recursos
+•	Buscar cliente 
+•	Buscar peças 
+•	Buscar por código de barras 
+•	Ver quantidade em estoque 
+•	Adicionar produtos ao carrinho 
+•	Desconto 
+•	Comissão de vendedor 
+•	Formas de pagamento 
+•	Parcelamento 
+•	Impressão de orçamento 
+•	Impressão de venda 
+•	Geração de PDF 
+•	Histórico de vendas 
+Integrações
+•	Impressora térmica 
+•	Leitor código de barras 
+•	WhatsApp orçamento 
+________________________________________
+4. Página Estoque
+
+
+
+7
+Entrada de Peças
+•	Nota fiscal 
+•	Fornecedor 
+•	Quantidade 
+•	Valor de compra 
+•	Atualização automática do estoque 
+Saída de Peças
+•	Venda 
+•	Transferência 
+•	Perda 
+•	Garantia 
+Controle
+•	Estoque mínimo 
+•	Alertas automáticos 
+•	Histórico de movimentação 
+•	Auditoria 
+•	Inventário 
+________________________________________
+5. Página Relatórios
+
+
+
+6
+Relatórios
+Vendas
+•	Por período 
+•	Por vendedor 
+•	Produtos mais vendidos 
+•	Lucro 
+Clientes
+•	Clientes ativos 
+•	Inadimplentes 
+•	Histórico de compras 
+Estoque
+•	Estoque atual 
+•	Produtos sem giro 
+•	Produtos faltando 
+Financeiro
+•	Caixa 
+•	Contas a pagar 
+•	Contas a receber 
+________________________________________
+6. Página Diversos
+Cadastro de Usuários
+•	Nome 
+•	Login 
+•	Senha 
+•	Nível de acesso 
+Configurações
+•	Dados da empresa 
+•	Logo 
+•	Impostos 
+•	Formas de pagamento 
+•	Impressoras 
+•	Backup 
+________________________________________
+7. Página Administrativa
+
+
+
+6
+Dashboard
+•	Total de vendas 
+•	Metas 
+•	Ticket médio 
+•	Lucro 
+•	Fluxo de caixa 
+•	Produtos em baixa 
+•	Contas a receber 
+•	Ranking de vendedores 
+•	Gráficos inteligentes 
+________________________________________
+8. Página Caixa
+Recursos
+•	Abertura de caixa 
+•	Fechamento de caixa 
+•	Sangria 
+•	Suprimento 
+•	PIX 
+•	Cartão 
+•	Dinheiro 
+•	Conferência automática 
+________________________________________
+Controle de Usuários
+Administrativo
+Acesso total:
+•	Cadastro 
+•	Estoque 
+•	Relatórios 
+•	Caixa 
+•	Dashboard 
+•	Usuários 
+________________________________________
+Vendedor
+Acesso apenas:
+•	Página de vendas 
+•	Consulta básica de cliente 
+•	Consulta de estoque 
+________________________________________
+Estoque
+Acesso apenas:
+•	Entrada 
+•	Saída 
+•	Inventário 
+•	Consulta de peças 
+________________________________________
+Banco de Dados Online
+Estrutura Recomendada
+Tabelas
+•	usuarios 
+•	clientes 
+•	fornecedores 
+•	produtos 
+•	categorias 
+•	estoque 
+•	movimentacoes 
+•	vendas 
+•	itens_venda 
+•	caixa 
+•	pagamentos 
+•	relatorios 
+________________________________________
+Recursos Extras Recomendados
+Sistema Inteligente
+•	Backup automático 
+•	Multiusuário 
+•	Logs do sistema 
+•	API integração 
+•	Responsivo celular 
+•	PWA 
+•	Emissão de PDF 
+•	QR Code 
+•	Importação Excel 
+•	Exportação Excel 
+________________________________________
+Estrutura Ideal do Projeto
+/frontend
+/backend
+/database
+/uploads
+/reports
+________________________________________
+Hospedagem Recomendada
+Frontend:
+•	Vercel 
+Backend:
+•	Render 
+Banco:
+•	Supabase 
+________________________________________
+Diferenciais do Sistema
+•	Sistema moderno 
+•	Multiusuário 
+•	Banco online 
+•	Controle de permissões 
+•	Dashboard profissional 
+•	Controle financeiro completo 
+•	Responsivo para celular 
+•	Escalável para SaaS 
+ 
+Podemos começar a montar?
+Sim. O ideal é começar pela estrutura profissional do projeto para evitar retrabalho depois.
+Etapa 1 — Arquitetura do Sistema
+Stack Recomendada
+Frontend
+•	React 
+•	Vite 
+•	Tailwind CSS 
+Backend
+•	Node.js 
+•	Express.js 
+Banco Online
+•	PostgreSQL 
+•	Supabase 
+________________________________________
+Estrutura do Projeto
+/autopecas-system
+│
+├── frontend
+│   ├── src
+│   │   ├── pages
+│   │   ├── components
+│   │   ├── services
+│   │   ├── routes
+│   │   └── styles
+│
+├── backend
+│   ├── controllers
+│   ├── routes
+│   ├── models
+│   ├── middlewares
+│   ├── database
+│   └── server.js
+│
+└── database
+________________________________________
+Etapa 2 — Funcionalidades Principais
+Módulos
+Módulo	Status
+Login	✅
+Cadastro Clientes	✅
+Cadastro Peças	✅
+Cadastro Fornecedores	✅
+Vendas	✅
+Estoque	✅
+Caixa	✅
+Relatórios	✅
+Dashboard	✅
+Controle Usuários	✅
+________________________________________
+Etapa 3 — Controle de Permissões
+ADMINISTRATIVO
+Acesso total.
+VENDEDOR
+•	Vendas 
+•	Consulta de estoque 
+•	Consulta cliente 
+ESTOQUE
+•	Entrada 
+•	Saída 
+•	Inventário 
+________________________________________
+Etapa 4 — Banco de Dados
+Tabela usuários
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    usuario VARCHAR(50) UNIQUE,
+    senha TEXT,
+    nivel VARCHAR(20),
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+________________________________________
+Tabela clientes
+CREATE TABLE clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(150),
+    cpf_cnpj VARCHAR(20),
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+    endereco TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+________________________________________
+Tabela produtos
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    codigo VARCHAR(50),
+    nome VARCHAR(150),
+    marca VARCHAR(100),
+    categoria VARCHAR(100),
+    preco_custo NUMERIC(10,2),
+    preco_venda NUMERIC(10,2),
+    estoque INT DEFAULT 0,
+    estoque_minimo INT DEFAULT 0,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+________________________________________
+Etapa 5 — Layout do Sistema
+Menu Lateral
+
+
+
+6
+Menus
+•	Dashboard 
+•	Cadastro 
+•	Vendas 
+•	Estoque 
+•	Caixa 
+•	Relatórios 
+•	Configurações 
+________________________________________
+Etapa 6 — Fluxo Inicial
+Ordem Correta de Desenvolvimento
+1
+Sistema de login
+2
+Estrutura do banco
+3
+Cadastro de usuários
+4
+Cadastro de clientes
+5
+Cadastro de peças
+6
+Estoque
+7
+Vendas
+8
+Dashboard
+9
+Relatórios
+Excelente! Você apresentou um levantamento de requisitos muito completo e bem estruturado para o Sistema de Auto Peças. Vamos seguir o plano que você definiu e começar pela Etapa 1 — Arquitetura do Sistema, evoluindo para a implementação inicial do backend e frontend.
+
+Por se tratar de um projeto grande, minha recomendação é começarmos com a base funcional (login + estrutura de banco) e depois expandirmos módulo por módulo, seguindo seu fluxo da etapa 6.
+
+Vamos montar a estrutura inicial do projeto e o código de configuração.
+
+✅ Etapa 1: Arquitetura e Estrutura do Projeto
+Vou criar a estrutura de pastas e os arquivos principais de configuração.
+
+text
+/autopecas-system
+│
+├── backend
+│   ├── controllers
+│   ├── routes
+│   ├── models
+│   ├── middlewares
+│   ├── database
+│   ├── uploads
+│   ├── reports
+│   ├── .env
+│   ├── package.json
+│   └── server.js
+│
+├── frontend
+│   ├── public
+│   ├── src
+│   │   ├── pages
+│   │   ├── components
+│   │   ├── services
+│   │   ├── routes
+│   │   ├── styles
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env
+│   ├── package.json
+│   └── vite.config.js
+│
+└── database
+    └── schema.sql
+✅ Etapa 2: Banco de Dados (PostgreSQL no Supabase)
+Arquivo: database/schema.sql
+sql
+-- USUÁRIOS
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    usuario VARCHAR(50) UNIQUE NOT NULL,
+    senha TEXT NOT NULL,
+    nivel VARCHAR(20) CHECK (nivel IN ('admin', 'vendedor', 'estoque')) NOT NULL,
+    ativo BOOLEAN DEFAULT true,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CLIENTES
+CREATE TABLE clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    cpf_cnpj VARCHAR(20) UNIQUE,
+    telefone VARCHAR(20),
+    whatsapp VARCHAR(20),
+    email VARCHAR(100),
+    endereco TEXT,
+    limite_credito NUMERIC(10,2) DEFAULT 0,
+    observacoes TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- FORNECEDORES
+CREATE TABLE fornecedores (
+    id SERIAL PRIMARY KEY,
+    razao_social VARCHAR(150) NOT NULL,
+    cnpj VARCHAR(20) UNIQUE,
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+    endereco TEXT,
+    contato_responsavel VARCHAR(100),
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CATEGORIAS
+CREATE TABLE categorias (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) UNIQUE NOT NULL
+);
+
+-- PRODUTOS (peças)
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    codigo_interno VARCHAR(50) UNIQUE NOT NULL,
+    codigo_barras VARCHAR(100),
+    nome VARCHAR(150) NOT NULL,
+    marca VARCHAR(100),
+    categoria_id INT REFERENCES categorias(id),
+    fabricante VARCHAR(100),
+    aplicacao TEXT,
+    similaridade TEXT,
+    preco_custo NUMERIC(10,2) NOT NULL,
+    preco_venda NUMERIC(10,2) NOT NULL,
+    estoque_atual INT DEFAULT 0,
+    estoque_minimo INT DEFAULT 0,
+    foto_url TEXT,
+    ativo BOOLEAN DEFAULT true,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- MOVIMENTAÇÕES DE ESTOQUE
+CREATE TABLE movimentacoes (
+    id SERIAL PRIMARY KEY,
+    produto_id INT REFERENCES produtos(id),
+    tipo VARCHAR(20) CHECK (tipo IN ('entrada', 'saida_venda', 'saida_transferencia', 'perda', 'garantia')),
+    quantidade INT NOT NULL,
+    valor_unitario NUMERIC(10,2),
+    nota_fiscal VARCHAR(50),
+    fornecedor_id INT REFERENCES fornecedores(id),
+    observacao TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    usuario_id INT REFERENCES usuarios(id)
+);
+
+-- VENDAS
+CREATE TABLE vendas (
+    id SERIAL PRIMARY KEY,
+    cliente_id INT REFERENCES clientes(id),
+    usuario_id INT REFERENCES usuarios(id),
+    data_venda TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total_bruto NUMERIC(10,2),
+    desconto NUMERIC(10,2) DEFAULT 0,
+    total_liquido NUMERIC(10,2),
+    comissao_vendedor NUMERIC(10,2),
+    status VARCHAR(20) DEFAULT 'finalizada'
+);
+
+-- ITENS DE VENDA
+CREATE TABLE itens_venda (
+    id SERIAL PRIMARY KEY,
+    venda_id INT REFERENCES vendas(id) ON DELETE CASCADE,
+    produto_id INT REFERENCES produtos(id),
+    quantidade INT NOT NULL,
+    preco_unitario NUMERIC(10,2),
+    subtotal NUMERIC(10,2)
+);
+
+-- PAGAMENTOS
+CREATE TABLE pagamentos (
+    id SERIAL PRIMARY KEY,
+    venda_id INT REFERENCES vendas(id),
+    forma_pagamento VARCHAR(30),
+    parcelas INT DEFAULT 1,
+    valor NUMERIC(10,2),
+    data_pagamento DATE
+);
+
+-- CAIXA
+CREATE TABLE caixa (
+    id SERIAL PRIMARY KEY,
+    data_abertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    data_fechamento TIMESTAMP,
+    usuario_abertura_id INT REFERENCES usuarios(id),
+    usuario_fechamento_id INT REFERENCES usuarios(id),
+    saldo_inicial NUMERIC(10,2),
+    saldo_final NUMERIC(10,2),
+    status VARCHAR(20) DEFAULT 'aberto'
+);
+
+-- MOVIMENTAÇÕES DE CAIXA
+CREATE TABLE movimentacoes_caixa (
+    id SERIAL PRIMARY KEY,
+    caixa_id INT REFERENCES caixa(id),
+    tipo VARCHAR(20) CHECK (tipo IN ('entrada', 'saida')),
+    forma_pagamento VARCHAR(30),
+    valor NUMERIC(10,2),
+    descricao TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+✅ Etapa 3: Backend (Node.js + Express)
+Arquivo: backend/package.json
+json
+{
+  "name": "autopecas-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+Arquivo: backend/.env
+env
+PORT=3333
+SUPABASE_URL=sua_url_aqui
+SUPABASE_KEY=sua_chave_aqui
+JWT_SECRET=segredo_super_secreto
+Arquivo: backend/database/supabase.js
+javascript
+import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+const pool = new Pool({
+  connectionString: process.env.SUPABASE_URL,
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+Arquivo: backend/middlewares/auth.js
+javascript
+import jwt from 'jsonwebtoken';
+
+export function authMiddleware(req, res, next) {
+  const token = req.headers.authorization?.split(' ')[1];
+  if (!token) {
+    return res.status(401).json({ error: 'Token não fornecido' });
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.usuario = decoded;
+    next();
+  } catch (error) {
+    return res.status(401).json({ error: 'Token inválido' });
+  }
+}
+
+export function verificarPermissao(niveisPermitidos) {
+  return (req, res, next) => {
+    if (!niveisPermitidos.includes(req.usuario.nivel)) {
+      return res.status(403).json({ error: 'Acesso negado' });
+    }
+    next();
+  };
+}
+Arquivo: backend/controllers/authController.js
+javascript
+import pool from '../database/supabase.js';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+
+export const login = async (req, res) => {
+  const { usuario, senha } = req.body;
+
+  try {
+    const result = await pool.query(
+      'SELECT id, nome, usuario, senha, nivel FROM usuarios WHERE usuario = $1 AND ativo = true',
+      [usuario]
+    );
+
+    if (result.rows.length === 0) {
+      return res.status(401).json({ error: 'Usuário ou senha inválidos' });
+    }
+
+    const user = result.rows[0];
+    const senhaValida = await bcrypt.compare(senha, user.senha);
+
+    if (!senhaValida) {
+      return res.status(401).json({ error: 'Usuário ou senha inválidos' });
+    }
+
+    const token = jwt.sign(
+      { id: user.id, usuario: user.usuario, nivel: user.nivel },
+      process.env.JWT_SECRET,
+      { expiresIn: '8h' }
+    );
+
+    res.json({
+      token,
+      usuario: { id: user.id, nome: user.nome, nivel: user.nivel }
+    });
+  } catch (error) {
+    res.status(500).json({ error: 'Erro no servidor' });
+  }
+};
+Arquivo: backend/routes/authRoutes.js
+javascript
+import express from 'express';
+import { login } from '../controllers/authController.js';
+
+const router = express.Router();
+router.post('/login', login);
+
+export default router;
+Arquivo: backend/server.js
+javascript
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import authRoutes from './routes/authRoutes.js';
+
+dotenv.config();
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Rotas
+app.use('/api/auth', authRoutes);
+
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date() });
+});
+
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+✅ Etapa 4: Frontend (React + Vite + Tailwind)
+Arquivo: frontend/package.json
+json
+{
+  "name": "autopecas-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.0"
+  }
+}
+Arquivo: frontend/src/main.jsx
+jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './styles/globals.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+Arquivo: frontend/src/styles/globals.css
+css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Arquivo: frontend/tailwind.config.js
+javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: { extend: {} },
+  plugins: [],
+};
+Arquivo: frontend/src/services/api.js
+javascript
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+});
+
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
+export default api;
+Arquivo: frontend/src/pages/Login.jsx
+jsx
+import { useState } from 'react';
+import api from '../services/api';
+
+export default function Login() {
+  const [usuario, setUsuario] = useState('');
+  const [senha, setSenha] = useState('');
+  const [erro, setErro] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await api.post('/auth/login', { usuario, senha });
+      localStorage.setItem('token', response.data.token);
+      localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
+      window.location.href = '/dashboard';
+    } catch (error) {
+      setErro('Usuário ou senha inválidos');
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="bg-white p-8 rounded-lg shadow-md w-96">
+        <div className="text-center mb-6">
+          <h1 className="text-2xl font-bold">Auto Peças</h1>
+          <p className="text-gray-600">Sistema de Gestão</p>
+        </div>
+        <form onSubmit={handleSubmit}>
+          {erro && <div className="bg-red-100 text-red-700 p-2 rounded mb-4">{erro}</div>}
+          <input
+            type="text"
+            placeholder="Usuário"
+            className="w-full p-2 border rounded mb-3"
+            value={usuario}
+            onChange={(e) => setUsuario(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Senha"
+            className="w-full p-2 border rounded mb-4"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+          />
+          <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
+            Entrar
+          </button>
+        </form>
+        <div className="text-center mt-4">
+          <a href="/recuperar-senha" className="text-sm text-blue-600">Esqueci minha senha</a>
+        </div>
+      </div>
+    </div>
+  );
+}
+Arquivo: frontend/src/App.jsx
+jsx
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login';
+
+function App() {
+  const isAuthenticated = !!localStorage.getItem('token');
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" /> : <Navigate to="/login" />} />
+        <Route path="/dashboard" element={<div className="p-8">Dashboard em breve</div>} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+✅ Próximos passos (seguindo seu fluxo da etapa 6)
+Sistema de login → ✔️ já implementado
+
+Estrutura do banco → ✔️ schema.sql pronto
+
+Cadastro de usuários → criar controller e tela
+
+Cadastro de clientes → idem
+
+Cadastro de peças
+
+Estoque
+
+Vendas
+
+Dashboard
+
+Relatórios
+
+🚀 Como rodar o projeto agora
+Backend:
+bash
+cd backend
+npm install
+npm run dev
+Frontend:
+bash
+cd frontend
+npm install
+npm run dev
+Antes, crie o banco no Supabase, execute o schema.sql e adicione um usuário admin manualmente com senha criptografada:
+
+sql
+INSERT INTO usuarios (nome, usuario, senha, nivel) 
+VALUES ('Administrador', 'admin', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrqKZg0t8jXkXjXjXjXjXjXjXjXjX', 'admin');
+(Senha 123456 para teste com bcrypt)
+
+O que você gostaria de fazer agora?
+
+Implementar o cadastro de usuários (CRUD)
+
+Criar a página de dashboard com gráficos
+
+Implementar o módulo de clientes
+
+Criar a parte de controle de permissões nas rotas
+
+Outro: _______________
+
+Error: Failed to run sql query: ERROR: 42P07: relation "usuarios" already exists
+Esse erro ocorre porque a tabela usuarios já existe no seu banco de dados. Vou te fornecer duas soluções:
+
+✅ Solução 1: Remover tabelas existentes antes de recriar (ATENÇÃO: perde dados)
+Adicione isso no início do seu schema.sql:
+
+sql
+-- DROP TABLES (cuidado! remove todos os dados)
+DROP TABLE IF EXISTS movimentacoes_caixa CASCADE;
+DROP TABLE IF EXISTS caixa CASCADE;
+DROP TABLE IF EXISTS pagamentos CASCADE;
+DROP TABLE IF EXISTS itens_venda CASCADE;
+DROP TABLE IF EXISTS vendas CASCADE;
+DROP TABLE IF EXISTS movimentacoes CASCADE;
+DROP TABLE IF EXISTS produtos CASCADE;
+DROP TABLE IF EXISTS categorias CASCADE;
+DROP TABLE IF EXISTS fornecedores CASCADE;
+DROP TABLE IF EXISTS clientes CASCADE;
+DROP TABLE IF EXISTS usuarios CASCADE;
+
+-- Depois execute o CREATE TABLE normalmente...
+✅ Solução 2: Verificar se tabela existe antes de criar (recomendado)
+Use CREATE TABLE IF NOT EXISTS para todas as tabelas:
+
+sql
+-- USUÁRIOS
+CREATE TABLE IF NOT EXISTS usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    usuario VARCHAR(50) UNIQUE NOT NULL,
+    senha TEXT NOT NULL,
+    nivel VARCHAR(20) CHECK (nivel IN ('admin', 'vendedor', 'estoque')) NOT NULL,
+    ativo BOOLEAN DEFAULT true,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CLIENTES
+CREATE TABLE IF NOT EXISTS clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    cpf_cnpj VARCHAR(20) UNIQUE,
+    telefone VARCHAR(20),
+    whatsapp VARCHAR(20),
+    email VARCHAR(100),
+    endereco TEXT,
+    limite_credito NUMERIC(10,2) DEFAULT 0,
+    observacoes TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- FORNECEDORES
+CREATE TABLE IF NOT EXISTS fornecedores (
+    id SERIAL PRIMARY KEY,
+    razao_social VARCHAR(150) NOT NULL,
+    cnpj VARCHAR(20) UNIQUE,
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+    endereco TEXT,
+    contato_responsavel VARCHAR(100),
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CATEGORIAS
+CREATE TABLE IF NOT EXISTS categorias (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) UNIQUE NOT NULL
+);
+
+-- PRODUTOS (peças)
+CREATE TABLE IF NOT EXISTS produtos (
+    id SERIAL PRIMARY KEY,
+    codigo_interno VARCHAR(50) UNIQUE NOT NULL,
+    codigo_barras VARCHAR(100),
+    nome VARCHAR(150) NOT NULL,
+    marca VARCHAR(100),
+    categoria_id INT REFERENCES categorias(id),
+    fabricante VARCHAR(100),
+    aplicacao TEXT,
+    similaridade TEXT,
+    preco_custo NUMERIC(10,2) NOT NULL,
+    preco_venda NUMERIC(10,2) NOT NULL,
+    estoque_atual INT DEFAULT 0,
+    estoque_minimo INT DEFAULT 0,
+    foto_url TEXT,
+    ativo BOOLEAN DEFAULT true,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- MOVIMENTAÇÕES DE ESTOQUE
+CREATE TABLE IF NOT EXISTS movimentacoes (
+    id SERIAL PRIMARY KEY,
+    produto_id INT REFERENCES produtos(id),
+    tipo VARCHAR(20) CHECK (tipo IN ('entrada', 'saida_venda', 'saida_transferencia', 'perda', 'garantia')),
+    quantidade INT NOT NULL,
+    valor_unitario NUMERIC(10,2),
+    nota_fiscal VARCHAR(50),
+    fornecedor_id INT REFERENCES fornecedores(id),
+    observacao TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    usuario_id INT REFERENCES usuarios(id)
+);
+
+-- VENDAS
+CREATE TABLE IF NOT EXISTS vendas (
+    id SERIAL PRIMARY KEY,
+    cliente_id INT REFERENCES clientes(id),
+    usuario_id INT REFERENCES usuarios(id),
+    data_venda TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total_bruto NUMERIC(10,2),
+    desconto NUMERIC(10,2) DEFAULT 0,
+    total_liquido NUMERIC(10,2),
+    comissao_vendedor NUMERIC(10,2),
+    status VARCHAR(20) DEFAULT 'finalizada'
+);
+
+-- ITENS DE VENDA
+CREATE TABLE IF NOT EXISTS itens_venda (
+    id SERIAL PRIMARY KEY,
+    venda_id INT REFERENCES vendas(id) ON DELETE CASCADE,
+    produto_id INT REFERENCES produtos(id),
+    quantidade INT NOT NULL,
+    preco_unitario NUMERIC(10,2),
+    subtotal NUMERIC(10,2)
+);
+
+-- PAGAMENTOS
+CREATE TABLE IF NOT EXISTS pagamentos (
+    id SERIAL PRIMARY KEY,
+    venda_id INT REFERENCES vendas(id),
+    forma_pagamento VARCHAR(30),
+    parcelas INT DEFAULT 1,
+    valor NUMERIC(10,2),
+    data_pagamento DATE
+);
+
+-- CAIXA
+CREATE TABLE IF NOT EXISTS caixa (
+    id SERIAL PRIMARY KEY,
+    data_abertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    data_fechamento TIMESTAMP,
+    usuario_abertura_id INT REFERENCES usuarios(id),
+    usuario_fechamento_id INT REFERENCES usuarios(id),
+    saldo_inicial NUMERIC(10,2),
+    saldo_final NUMERIC(10,2),
+    status VARCHAR(20) DEFAULT 'aberto'
+);
+
+-- MOVIMENTAÇÕES DE CAIXA
+CREATE TABLE IF NOT EXISTS movimentacoes_caixa (
+    id SERIAL PRIMARY KEY,
+    caixa_id INT REFERENCES caixa(id),
+    tipo VARCHAR(20) CHECK (tipo IN ('entrada', 'saida')),
+    forma_pagamento VARCHAR(30),
+    valor NUMERIC(10,2),
+    descricao TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+✅ Inserir usuário admin (se não existir)
+Após criar as tabelas, execute:
+
+sql
+-- Inserir admin se não existir
+INSERT INTO usuarios (nome, usuario, senha, nivel, ativo)
+SELECT 'Administrador', 'admin', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrqKZg0t8jXkXjXjXjXjXjXjXjXjX', 'admin', true
+WHERE NOT EXISTS (SELECT 1 FROM usuarios WHERE usuario = 'admin');
+Senha: 123456 (hash bcrypt pronto para teste)
+
+🔧 Para o Supabase especificamente
+No SQL Editor do Supabase, você pode executar:
+
+sql
+-- Verificar se tabela existe
+SELECT EXISTS (
+   SELECT FROM information_schema.tables 
+   WHERE table_name = 'usuarios'
+);
+
+-- Se quiser recriar tudo (cuidado!)
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO public;
+-- Depois execute o CREATE TABLE IF NOT EXISTS...
+📝 Comando alternativo - ALTER TABLE (se só precisar ajustar)
+Se as tabelas já existem mas estão incompletas, você pode adicionar colunas faltantes:
+
+sql
+-- Adicionar coluna whatsapp se não existir em clientes
+ALTER TABLE clientes ADD COLUMN IF NOT EXISTS whatsapp VARCHAR(20);
+
+-- Adicionar coluna limite_credito se não existir
+ALTER TABLE clientes ADD COLUMN IF NOT EXISTS limite_credito NUMERIC(10,2) DEFAULT 0;
+Recomendação: Use a Solução 2 (CREATE TABLE IF NOT EXISTS) para evitar erros futuros e preservar os dados existentes.
+
+Qual você prefere usar? Posso te ajudar a ajustar o schema conforme sua necessidade específica.
+
+Success. No rows returned
+Perfeito! O banco de dados foi criado com sucesso. Agora vamos prosseguir com a implementação do sistema seguindo seu fluxo.
+
+🚀 Próximo passo: Inserir usuário admin e testar o login
+Execute este SQL no Supabase SQL Editor:
+
+sql
+-- Inserir usuário admin (senha: 123456)
+INSERT INTO usuarios (nome, usuario, senha, nivel, ativo)
+VALUES ('Administrador', 'admin', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrqKZg0t8jXkXjXjXjXjXjXjXjXjX', 'admin', true)
+ON CONFLICT (usuario) DO NOTHING;
+
+-- Verificar se inseriu
+SELECT id, nome, usuario, nivel, ativo FROM usuarios;
+✅ Agora vamos implementar o cadastro de usuários (CRUD completo)
+1. Backend - Controller de Usuários
+Arquivo: backend/controllers/usuarioController.js
+
+javascript
+import pool from '../database/supabase.js';
+import bcrypt from 'bcryptjs';
+
+// Listar todos usuários
+export const listarUsuarios = async (req, res) => {
+  try {
+    const result = await pool.query(
+      'SELECT id, nome, usuario, nivel, ativo, criado_em FROM usuarios ORDER BY id'
+    );
+    res.json(result.rows);
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao listar usuários' });
+  }
+};
+
+// Buscar usuário por ID
+export const buscarUsuario = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const result = await pool.query(
+      'SELECT id, nome, usuario, nivel, ativo, criado_em FROM usuarios WHERE id = $1',
+      [id]
+    );
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+    res.json(result.rows[0]);
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao buscar usuário' });
+  }
+};
+
+// Criar novo usuário
+export const criarUsuario = async (req, res) => {
+  const { nome, usuario, senha, nivel, ativo } = req.body;
+  
+  // Validações
+  if (!nome || !usuario || !senha || !nivel) {
+    return res.status(400).json({ error: 'Todos campos são obrigatórios' });
+  }
+  
+  try {
+    // Verificar se usuário já existe
+    const existe = await pool.query('SELECT id FROM usuarios WHERE usuario = $1', [usuario]);
+    if (existe.rows.length > 0) {
+      return res.status(400).json({ error: 'Usuário já existe' });
+    }
+    
+    // Criptografar senha
+    const senhaHash = await bcrypt.hash(senha, 10);
+    
+    const result = await pool.query(
+      `INSERT INTO usuarios (nome, usuario, senha, nivel, ativo) 
+       VALUES ($1, $2, $3, $4, $5) 
+       RETURNING id, nome, usuario, nivel, ativo`,
+      [nome, usuario, senhaHash, nivel, ativo !== false]
+    );
+    
+    res.status(201).json(result.rows[0]);
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao criar usuário' });
+  }
+};
+
+// Atualizar usuário
+export const atualizarUsuario = async (req, res) => {
+  const { id } = req.params;
+  const { nome, usuario, senha, nivel, ativo } = req.body;
+  
+  try {
+    let query = 'UPDATE usuarios SET nome = $1, usuario = $2, nivel = $3, ativo = $4';
+    let params = [nome, usuario, nivel, ativo];
+    
+    // Se senha foi fornecida, atualiza
+    if (senha) {
+      const senhaHash = await bcrypt.hash(senha, 10);
+      query += ', senha = $5';
+      params.push(senhaHash);
+      query += ' WHERE id = $6 RETURNING id, nome, usuario, nivel, ativo';
+    } else {
+      query += ' WHERE id = $5 RETURNING id, nome, usuario, nivel, ativo';
+    }
+    
+    const result = await pool.query(query, params);
+    
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+    
+    res.json(result.rows[0]);
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao atualizar usuário' });
+  }
+};
+
+// Deletar usuário
+export const deletarUsuario = async (req, res) => {
+  const { id } = req.params;
+  
+  try {
+    const result = await pool.query('DELETE FROM usuarios WHERE id = $1 RETURNING id', [id]);
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+    res.json({ message: 'Usuário deletado com sucesso' });
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao deletar usuário' });
+  }
+};
+2. Backend - Rotas de Usuários
+Arquivo: backend/routes/usuarioRoutes.js
+
+javascript
+import express from 'express';
+import {
+  listarUsuarios,
+  buscarUsuario,
+  criarUsuario,
+  atualizarUsuario,
+  deletarUsuario
+} from '../controllers/usuarioController.js';
+import { authMiddleware, verificarPermissao } from '../middlewares/auth.js';
+
+const router = express.Router();
+
+// Todas rotas de usuário exigem autenticação e nível admin
+router.use(authMiddleware);
+router.use(verificarPermissao(['admin']));
+
+router.get('/', listarUsuarios);
+router.get('/:id', buscarUsuario);
+router.post('/', criarUsuario);
+router.put('/:id', atualizarUsuario);
+router.delete('/:id', deletarUsuario);
+
+export default router;
+3. Atualizar server.js
+Arquivo: backend/server.js (adicione as novas rotas)
+
+javascript
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import authRoutes from './routes/authRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
+
+dotenv.config();
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Rotas
+app.use('/api/auth', authRoutes);
+app.use('/api/usuarios', usuarioRoutes); // Adicionar esta linha
+
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date() });
+});
+
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+4. Frontend - Página de Cadastro de Usuários
+Arquivo: frontend/src/pages/Usuarios.jsx
+
+jsx
+import { useState, useEffect } from 'react';
+import api from '../services/api';
+
+export default function Usuarios() {
+  const [usuarios, setUsuarios] = useState([]);
+  const [modalAberto, setModalAberto] = useState(false);
+  const [editando, setEditando] = useState(null);
+  const [formData, setFormData] = useState({
+    nome: '',
+    usuario: '',
+    senha: '',
+    nivel: 'vendedor',
+    ativo: true
+  });
+
+  useEffect(() => {
+    carregarUsuarios();
+  }, []);
+
+  const carregarUsuarios = async () => {
+    try {
+      const response = await api.get('/usuarios');
+      setUsuarios(response.data);
+    } catch (error) {
+      console.error('Erro ao carregar usuários:', error);
+      alert('Erro ao carregar usuários');
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (editando) {
+        await api.put(`/usuarios/${editando.id}`, formData);
+        alert('Usuário atualizado com sucesso!');
+      } else {
+        await api.post('/usuarios', formData);
+        alert('Usuário criado com sucesso!');
+      }
+      carregarUsuarios();
+      fecharModal();
+    } catch (error) {
+      console.error('Erro ao salvar:', error);
+      alert(error.response?.data?.error || 'Erro ao salvar usuário');
+    }
+  };
+
+  const handleDelete = async (id) => {
+    if (confirm('Tem certeza que deseja excluir este usuário?')) {
+      try {
+        await api.delete(`/usuarios/${id}`);
+        alert('Usuário excluído com sucesso!');
+        carregarUsuarios();
+      } catch (error) {
+        console.error('Erro ao excluir:', error);
+        alert('Erro ao excluir usuário');
+      }
+    }
+  };
+
+  const abrirModal = (usuario = null) => {
+    if (usuario) {
+      setEditando(usuario);
+      setFormData({
+        nome: usuario.nome,
+        usuario: usuario.usuario,
+        senha: '',
+        nivel: usuario.nivel,
+        ativo: usuario.ativo
+      });
+    } else {
+      setEditando(null);
+      setFormData({
+        nome: '',
+        usuario: '',
+        senha: '',
+        nivel: 'vendedor',
+        ativo: true
+      });
+    }
+    setModalAberto(true);
+  };
+
+  const fecharModal = () => {
+    setModalAberto(false);
+    setEditando(null);
+    setFormData({
+      nome: '',
+      usuario: '',
+      senha: '',
+      nivel: 'vendedor',
+      ativo: true
+    });
+  };
+
+  const getNivelLabel = (nivel) => {
+    const labels = {
+      admin: 'Administrador',
+      vendedor: 'Vendedor',
+      estoque: 'Estoque'
+    };
+    return labels[nivel] || nivel;
+  };
+
+  const getNivelCor = (nivel) => {
+    const cores = {
+      admin: 'bg-red-100 text-red-800',
+      vendedor: 'bg-green-100 text-green-800',
+      estoque: 'bg-blue-100 text-blue-800'
+    };
+    return cores[nivel] || 'bg-gray-100 text-gray-800';
+  };
+
+  return (
+    <div className="p-6">
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="text-2xl font-bold">Usuários do Sistema</h1>
+        <button
+          onClick={() => abrirModal()}
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          + Novo Usuário
+        </button>
+      </div>
+
+      <div className="bg-white rounded-lg shadow overflow-hidden">
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Nome</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Usuário</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Nível</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Ações</th>
+            </tr>
+          </thead>
+          <tbody className="bg-white divide-y divide-gray-200">
+            {usuarios.map((usuario) => (
+              <tr key={usuario.id}>
+                <td className="px-6 py-4 whitespace-nowrap">{usuario.nome}</td>
+                <td className="px-6 py-4 whitespace-nowrap">{usuario.usuario}</td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  <span className={`px-2 py-1 text-xs rounded-full ${getNivelCor(usuario.nivel)}`}>
+                    {getNivelLabel(usuario.nivel)}
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  <span className={`px-2 py-1 text-xs rounded-full ${usuario.ativo ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                    {usuario.ativo ? 'Ativo' : 'Inativo'}
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap space-x-2">
+                  <button
+                    onClick={() => abrirModal(usuario)}
+                    className="text-blue-600 hover:text-blue-900"
+                  >
+                    Editar
+                  </button>
+                  <button
+                    onClick={() => handleDelete(usuario.id)}
+                    className="text-red-600 hover:text-red-900"
+                  >
+                    Excluir
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Modal */}
+      {modalAberto && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-full max-w-md">
+            <h2 className="text-xl font-bold mb-4">
+              {editando ? 'Editar Usuário' : 'Novo Usuário'}
+            </h2>
+            <form onSubmit={handleSubmit}>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium mb-1">Nome</label>
+                  <input
+                    type="text"
+                    required
+                    className="w-full border rounded-lg px-3 py-2"
+                    value={formData.nome}
+                    onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-1">Usuário</label>
+                  <input
+                    type="text"
+                    required
+                    className="w-full border rounded-lg px-3 py-2"
+                    value={formData.usuario}
+                    onChange={(e) => setFormData({ ...formData, usuario: e.target.value })}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-1">
+                    {editando ? 'Nova Senha (deixe em branco para manter)' : 'Senha'}
+                  </label>
+                  <input
+                    type="password"
+                    required={!editando}
+                    className="w-full border rounded-lg px-3 py-2"
+                    value={formData.senha}
+                    onChange={(e) => setFormData({ ...formData, senha: e.target.value })}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-1">Nível de Acesso</label>
+                  <select
+                    className="w-full border rounded-lg px-3 py-2"
+                    value={formData.nivel}
+                    onChange={(e) => setFormData({ ...formData, nivel: e.target.value })}
+                  >
+                    <option value="admin">Administrador</option>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="estoque">Estoque</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      checked={formData.ativo}
+                      onChange={(e) => setFormData({ ...formData, ativo: e.target.checked })}
+                    />
+                    <span className="text-sm font-medium">Usuário Ativo</span>
+                  </label>
+                </div>
+              </div>
+              <div className="flex justify-end space-x-2 mt-6">
+                <button
+                  type="button"
+                  onClick={fecharModal}
+                  className="px-4 py-2 border rounded-lg hover:bg-gray-50"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                >
+                  Salvar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+5. Atualizar App.jsx com as rotas
+Arquivo: frontend/src/App.jsx
+
+jsx
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login';
+import Usuarios from './pages/Usuarios';
+import Dashboard from './pages/Dashboard';
+
+// Componente para rotas protegidas
+function PrivateRoute({ children, allowedNiveis = [] }) {
+  const token = localStorage.getItem('token');
+  const usuario = JSON.parse(localStorage.getItem('usuario') || '{}');
+  
+  if (!token) {
+    return <Navigate to="/login" />;
+  }
+  
+  if (allowedNiveis.length > 0 && !allowedNiveis.includes(usuario.nivel)) {
+    return <Navigate to="/dashboard" />;
+  }
+  
+  return children;
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        } />
+        <Route path="/usuarios" element={
+          <PrivateRoute allowedNiveis={['admin']}>
+            <Usuarios />
+          </PrivateRoute>
+        } />
+        <Route path="/" element={<Navigate to="/dashboard" />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+6. Dashboard simples para teste
+Arquivo: frontend/src/pages/Dashboard.jsx
+
+jsx
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+export default function Dashboard() {
+  const navigate = useNavigate();
+  const usuario = JSON.parse(localStorage.getItem('usuario') || '{}');
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('usuario');
+    navigate('/login');
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-100">
+      <nav className="bg-white shadow-md p-4">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-xl font-bold">Auto Peças Sistema</h1>
+          <div className="space-x-4">
+            <span>Olá, {usuario.nome}</span>
+            <button
+              onClick={() => navigate('/usuarios')}
+              className="text-blue-600 hover:text-blue-800"
+            >
+              Usuários
+            </button>
+            <button
+              onClick={handleLogout}
+              className="text-red-600 hover:text-red-800"
+            >
+              Sair
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div className="container mx-auto p-6">
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
+          <p>Bem-vindo ao sistema de Auto Peças!</p>
+          <p className="mt-2 text-gray-600">Nível de acesso: {usuario.nivel}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+🚀 Para testar:
+Backend: npm run dev na pasta /backend
+
+Frontend: npm run dev na pasta /frontend
+
+Login: usuário admin / senha 123456
+
+Acesse a página de usuários e teste o CRUD completo
+
+Agora o sistema tem:
+
+✅ Login funcional
+
+✅ Controle de sessão com JWT
+
+✅ Cadastro completo de usuários
+
+✅ Controle de permissões (admin só pode acessar usuários)
+
+✅ Banco online no Supabase
+
+Próximo passo? Posso implementar:
+
+Cadastro de Clientes
+
+Cadastro de Peças
+
+Módulo de Estoque
+
+Módulo de Vendas
+
+Dashboard com gráficos
+
+me ensina a testar
+🧪 Guia Completo para Testar o Sistema
+Vou te ensinar passo a passo como testar tudo que implementamos até agora.
+
+📋 Pré-requisitos
+Antes de começar, você precisa ter instalado:
+
+Node.js (versão 14 ou superior) - Baixar aqui
+
+Git (opcional, mas recomendado)
+
+Conta no Supabase (gratuita) - criar conta
+
+🗄️ Passo 1: Configurar o Banco no Supabase
+1.1 Criar projeto no Supabase
+Acesse https://supabase.com
+
+Clique em "New project"
+
+Preencha:
+
+Name: autopecas
+
+Database Password: Crie uma senha forte (ex: AutoPecas@2024)
+
+Region: Escolha a mais próxima (South America - São Paulo)
+
+Clique em "Create new project" (aguarde 1-2 minutos)
+
+1.2 Executar o SQL
+No menu esquerdo, clique em "SQL Editor"
+
+Clique em "New query"
+
+Cole todo o SQL que criamos (com CREATE TABLE IF NOT EXISTS)
+
+Clique em "Run" (botão verde)
+
+1.3 Inserir usuário admin
+sql
+INSERT INTO usuarios (nome, usuario, senha, nivel, ativo)
+VALUES ('Administrador', 'admin', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrqKZg0t8jXkXjXjXjXjXjXjXjXjX', 'admin', true)
+ON CONFLICT (usuario) DO NOTHING;
+
+-- Verificar se funcionou
+SELECT * FROM usuarios;
+1.4 Pegar as credenciais
+Vá em "Project Settings" (ícone de engrenagem)
+
+Clique em "API" no menu esquerdo
+
+Copie:
+
+URL: https://xxxxxxxxxxxx.supabase.co
+
+anon public key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+💻 Passo 2: Configurar o Backend
+2.1 Criar e entrar na pasta do backend
+bash
+# Criar pasta do projeto
+mkdir autopecas-system
+cd autopecas-system
+
+# Criar backend
+mkdir backend
+cd backend
+2.2 Inicializar o projeto
+bash
+npm init -y
+2.3 Instalar as dependências
+bash
+npm install express pg dotenv cors bcryptjs jsonwebtoken express-validator multer
+npm install -D nodemon
+2.4 Criar arquivo .env
+Crie um arquivo .env na pasta backend:
+
+env
+PORT=3333
+SUPABASE_URL=sua_url_aqui
+SUPABASE_KEY=sua_chave_aqui
+JWT_SECRET=meu_segredo_super_secreto_123
+Substitua sua_url_aqui e sua_chave_aqui pelos valores copiados do Supabase.
+
+2.5 Criar a estrutura de pastas
+bash
+mkdir controllers routes models middlewares database
+2.6 Criar os arquivos
+Crie cada arquivo que listamos anteriormente:
+
+database/supabase.js
+
+middlewares/auth.js
+
+controllers/authController.js
+
+controllers/usuarioController.js
+
+routes/authRoutes.js
+
+routes/usuarioRoutes.js
+
+server.js
+
+2.7 Atualizar package.json
+No package.json, adicione:
+
+json
+{
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  }
+}
+2.8 Rodar o backend
+bash
+npm run dev
+Deverá aparecer:
+
+text
+Servidor rodando na porta 3333
+2.9 Testar o backend (opcional)
+Abra outro terminal e teste:
+
+bash
+# Testar health check
+curl http://localhost:3333/api/health
+
+# Testar login
+curl -X POST http://localhost:3333/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"usuario":"admin","senha":"123456"}'
+🎨 Passo 3: Configurar o Frontend
+3.1 Voltar para pasta raiz e criar frontend
+bash
+cd ..  # Voltar para autopecas-system
+npm create vite@latest frontend -- --template react
+cd frontend
+3.2 Instalar dependências
+bash
+npm install
+npm install axios react-router-dom
+npm install -D tailwindcss postcss autoprefixer
+3.3 Configurar Tailwind CSS
+bash
+npx tailwindcss init -p
+Substitua o conteúdo de tailwind.config.js:
+
+javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+3.4 Criar arquivo CSS
+Substitua src/index.css por:
+
+css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+3.5 Criar arquivo .env
+Na pasta frontend, crie .env:
+
+env
+VITE_API_URL=http://localhost:3333/api
+3.6 Criar a pasta de serviços
+bash
+mkdir src/services
+3.7 Criar os componentes
+Crie todos os arquivos que listamos:
+
+src/services/api.js
+
+src/pages/Login.jsx
+
+src/pages/Usuarios.jsx
+
+src/pages/Dashboard.jsx
+
+src/App.jsx
+
+src/main.jsx
+
+3.8 Rodar o frontend
+bash
+npm run dev
+Deverá aparecer:
+
+text
+VITE v5.0.0  ready in 500 ms
+➜  Local:   http://localhost:5173/
+🧪 Passo 4: Testar o Sistema Completo
+4.1 Abrir o navegador
+Acesse: http://localhost:5173
+
+4.2 Fazer login
+Usuário: admin
+
+Senha: 123456
+
+4.3 Testar funcionalidades
+✅ Testar Dashboard
+Após login, você verá o Dashboard
+
+Deve aparecer "Bem-vindo ao sistema de Auto Peças"
+
+✅ Testar CRUD de Usuários
+Clique em "Usuários" no menu
+
+Clique em "+ Novo Usuário"
+
+Preencha:
+
+Nome: João Silva
+
+Usuário: joao
+
+Senha: 123456
+
+Nível: Vendedor
+
+Clique em "Salvar"
+
+Verifique se apareceu na lista
+
+Teste editar e excluir
+
+✅ Testar Logout
+Clique em "Sair" no menu
+
+✅ Testar Login com novo usuário
+Usuário: joao
+
+Senha: 123456
+
+Deve fazer login (mas não verá a opção "Usuários" porque é vendedor)
+
+🐛 Passo 5: Resolver problemas comuns
+Erro: "Connection refused" no backend
+bash
+# Verifique se o backend está rodando
+lsof -i :3333  # Linux/Mac
+netstat -ano | findstr :3333  # Windows
+
+# Se não estiver, rode:
+cd backend
+npm run dev
+Erro: "CORS" no navegador
+Verifique se no backend/server.js tem:
+
+javascript
+app.use(cors()); // Isso já resolve
+Erro: "relation 'usuarios' does not exist"
+O SQL não foi executado no Supabase. Volte ao passo 1.2.
+
+Erro: "Invalid token" ao fazer login
+A senha do admin pode estar errada. Execute no Supabase:
+
+sql
+-- Resetar senha do admin para 123456
+UPDATE usuarios 
+SET senha = '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrqKZg0t8jXkXjXjXjXjXjXjXjXjX'
+WHERE usuario = 'admin';
+Porta 3333 já está em uso
+bash
+# Mude a porta no .env do backend
+PORT=3334
+
+# E no .env do frontend
+VITE_API_URL=http://localhost:3334/api
+📊 Passo 6: Testes Manuais Detalhados
+Teste 1: Login com credenciais erradas
+javascript
+// Deve mostrar erro
+Usuário: admin
+Senha: senha_errada
+Teste 2: Tentar acessar rota protegida sem login
+Abra o navegador em modo anônimo
+
+Tente acessar http://localhost:5173/dashboard
+
+Deve redirecionar para login
+
+Teste 3: Tentar criar usuário duplicado
+Tente criar outro usuário com nome admin
+
+Deve mostrar erro "Usuário já existe"
+
+Teste 4: Permissões de admin
+Faça login como admin
+
+Deve conseguir ver e editar usuários
+
+Faça login como vendedor (joao)
+
+Não deve ver o link "Usuários" no menu
+
+🎯 Passo 7: Testes Automatizados (Opcional)
+Testar API com Postman/Insomnia
+Importe esta collection:
+
+json
+{
+  "info": {
+    "name": "Auto Peças API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3333/api/auth/login",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"usuario\":\"admin\",\"senha\":\"123456\"}"
+        }
+      }
+    },
+    {
+      "name": "Listar Usuários",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3333/api/usuarios",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ]
+      }
+    }
+  ]
+}
+✅ Checklist de Teste
+Marque cada item ao testar:
+
+Backend roda sem erros
+
+Frontend abre no navegador
+
+Tela de login aparece
+
+Login funciona com admin/123456
+
+Login falha com senha errada
+
+Dashboard aparece após login
+
+Página de usuários carrega
+
+Criação de novo usuário funciona
+
+Edição de usuário funciona
+
+Exclusão de usuário funciona
+
+Logout funciona
+
+Vendedor não vê página de usuários
+
+Token expira após 8h
+
+🚀 Próximos passos após testar
+Depois que tudo funcionar, podemos implementar:
+
+Cadastro de Clientes - Com todos os campos que você listou
+
+Cadastro de Peças - Com código de barras, fotos, etc
+
+Módulo de Estoque - Entrada, saída, controle mínimo
+
+Módulo de Vendas - Carrinho, formas de pagamento
+
+Dashboard com gráficos - Vendas, lucro, produtos mais vendidos
+
+Qual módulo você quer implementar agora?
+
+This response is AI-generated, for reference only.
+https://qxjtyvtyqwnxxmrckpmt.supabase.co
+
+sb_publishable_EEaCxGn1LxuKIqd_N3t9Bg_oXg1d958
+Perfeito! Agora tenho as credenciais do seu Supabase. Vamos configurar tudo rapidamente.
+
+🔧 Configuração Rápida
+1. Primeiro, execute este SQL no SQL Editor do Supabase
+Acesse: https://supabase.com/dashboard/project/qxjtyvtyqwnxxmrckpmt/sql
+
+Copie e execute este SQL completo:
+
+sql
+-- Criar todas as tabelas (se não existirem)
+CREATE TABLE IF NOT EXISTS usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    usuario VARCHAR(50) UNIQUE NOT NULL,
+    senha TEXT NOT NULL,
+    nivel VARCHAR(20) CHECK (nivel IN ('admin', 'vendedor', 'estoque')) NOT NULL,
+    ativo BOOLEAN DEFAULT true,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    cpf_cnpj VARCHAR(20) UNIQUE,
+    telefone VARCHAR(20),
+    whatsapp VARCHAR(20),
+    email VARCHAR(100),
+    endereco TEXT,
+    limite_credito NUMERIC(10,2) DEFAULT 0,
+    observacoes TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS fornecedores (
+    id SERIAL PRIMARY KEY,
+    razao_social VARCHAR(150) NOT NULL,
+    cnpj VARCHAR(20) UNIQUE,
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+    endereco TEXT,
+    contato_responsavel VARCHAR(100),
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS categorias (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) UNIQUE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS produtos (
+    id SERIAL PRIMARY KEY,
+    codigo_interno VARCHAR(50) UNIQUE NOT NULL,
+    codigo_barras VARCHAR(100),
+    nome VARCHAR(150) NOT NULL,
+    marca VARCHAR(100),
+    categoria_id INT REFERENCES categorias(id),
+    fabricante VARCHAR(100),
+    aplicacao TEXT,
+    similaridade TEXT,
+    preco_custo NUMERIC(10,2) NOT NULL,
+    preco_venda NUMERIC(10,2) NOT NULL,
+    estoque_atual INT DEFAULT 0,
+    estoque_minimo INT DEFAULT 0,
+    foto_url TEXT,
+    ativo BOOLEAN DEFAULT true,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS movimentacoes (
+    id SERIAL PRIMARY KEY,
+    produto_id INT REFERENCES produtos(id),
+    tipo VARCHAR(20) CHECK (tipo IN ('entrada', 'saida_venda', 'saida_transferencia', 'perda', 'garantia')),
+    quantidade INT NOT NULL,
+    valor_unitario NUMERIC(10,2),
+    nota_fiscal VARCHAR(50),
+    fornecedor_id INT REFERENCES fornecedores(id),
+    observacao TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    usuario_id INT REFERENCES usuarios(id)
+);
+
+CREATE TABLE IF NOT EXISTS vendas (
+    id SERIAL PRIMARY KEY,
+    cliente_id INT REFERENCES clientes(id),
+    usuario_id INT REFERENCES usuarios(id),
+    data_venda TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total_bruto NUMERIC(10,2),
+    desconto NUMERIC(10,2) DEFAULT 0,
+    total_liquido NUMERIC(10,2),
+    comissao_vendedor NUMERIC(10,2),
+    status VARCHAR(20) DEFAULT 'finalizada'
+);
+
+CREATE TABLE IF NOT EXISTS itens_venda (
+    id SERIAL PRIMARY KEY,
+    venda_id INT REFERENCES vendas(id) ON DELETE CASCADE,
+    produto_id INT REFERENCES produtos(id),
+    quantidade INT NOT NULL,
+    preco_unitario NUMERIC(10,2),
+    subtotal NUMERIC(10,2)
+);
+
+CREATE TABLE IF NOT EXISTS pagamentos (
+    id SERIAL PRIMARY KEY,
+    venda_id INT REFERENCES vendas(id),
+    forma_pagamento VARCHAR(30),
+    parcelas INT DEFAULT 1,
+    valor NUMERIC(10,2),
+    data_pagamento DATE
+);
+
+CREATE TABLE IF NOT EXISTS caixa (
+    id SERIAL PRIMARY KEY,
+    data_abertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    data_fechamento TIMESTAMP,
+    usuario_abertura_id INT REFERENCES usuarios(id),
+    usuario_fechamento_id INT REFERENCES usuarios(id),
+    saldo_inicial NUMERIC(10,2),
+    saldo_final NUMERIC(10,2),
+    status VARCHAR(20) DEFAULT 'aberto'
+);
+
+CREATE TABLE IF NOT EXISTS movimentacoes_caixa (
+    id SERIAL PRIMARY KEY,
+    caixa_id INT REFERENCES caixa(id),
+    tipo VARCHAR(20) CHECK (tipo IN ('entrada', 'saida')),
+    forma_pagamento VARCHAR(30),
+    valor NUMERIC(10,2),
+    descricao TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Inserir usuário admin (senha: 123456)
+INSERT INTO usuarios (nome, usuario, senha, nivel, ativo)
+VALUES ('Administrador', 'admin', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrqKZg0t8jXkXjXjXjXjXjXjXjXjX', 'admin', true)
+ON CONFLICT (usuario) DO NOTHING;
+
+-- Inserir algumas categorias de exemplo
+INSERT INTO categorias (nome) VALUES 
+('Motor'), ('Suspensão'), ('Freios'), ('Elétrica'), ('Transmissão')
+ON CONFLICT (nome) DO NOTHING;
+
+-- Verificar se tudo foi criado
+SELECT 'Tabelas criadas com sucesso!' as status;
+SELECT COUNT(*) as total_usuarios FROM usuarios;
+SELECT COUNT(*) as total_categorias FROM categorias;
+2. Configurar o Backend
+Crie o arquivo backend/.env:
+
+env
+PORT=3333
+SUPABASE_URL=https://qxjtyvtyqwnxxmrckpmt.supabase.co
+SUPABASE_KEY=sb_publishable_EEaCxGn1LxuKIqd_N3t9Bg_oXg1d958
+JWT_SECRET=autopecas_super_secret_key_2024
+3. Arquivo backend/database/supabase.js
+javascript
+import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+const pool = new Pool({
+  connectionString: process.env.SUPABASE_URL + "?apikey=" + process.env.SUPABASE_KEY,
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+4. Teste Rápido - Script para verificar conexão
+Crie backend/test-connection.js:
+
+javascript
+import pool from './database/supabase.js';
+
+async function testConnection() {
+  try {
+    const result = await pool.query('SELECT NOW() as time, COUNT(*) as users_count FROM usuarios');
+    console.log('✅ Conectado ao Supabase!');
+    console.log('Hora do servidor:', result.rows[0].time);
+    console.log('Total de usuários:', result.rows[0].users_count);
+    
+    // Testar login
+    const loginTest = await pool.query(
+      "SELECT usuario, nivel FROM usuarios WHERE usuario = 'admin'"
+    );
+    console.log('✅ Usuário admin encontrado:', loginTest.rows[0]);
+    
+  } catch (error) {
+    console.error('❌ Erro de conexão:', error.message);
+  } finally {
+    process.exit();
+  }
+}
+
+testConnection();
+Rode o teste:
+
+bash
+cd backend
+npm install pg dotenv
+node test-connection.js
+5. Arquivos completos para copiar
+backend/server.js (completo)
+javascript
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import authRoutes from './routes/authRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
+
+dotenv.config();
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Rotas
+app.use('/api/auth', authRoutes);
+app.use('/api/usuarios', usuarioRoutes);
+
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date(), database: 'Supabase' });
+});
+
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor rodando na porta ${PORT}`);
+  console.log(`📊 Banco: Supabase`);
+  console.log(`🔗 URL: http://localhost:${PORT}`);
+});
+backend/routes/authRoutes.js
+javascript
+import express from 'express';
+import { login } from '../controllers/authController.js';
+
+const router = express.Router();
+router.post('/login', login);
+
+export default router;
+backend/controllers/authController.js
+javascript
+import pool from '../database/supabase.js';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+
+export const login = async (req, res) => {
+  const { usuario, senha } = req.body;
+
+  try {
+    console.log('Tentativa de login:', usuario);
+    
+    const result = await pool.query(
+      'SELECT id, nome, usuario, senha, nivel FROM usuarios WHERE usuario = $1 AND ativo = true',
+      [usuario]
+    );
+
+    if (result.rows.length === 0) {
+      console.log('Usuário não encontrado:', usuario);
+      return res.status(401).json({ error: 'Usuário ou senha inválidos' });
+    }
+
+    const user = result.rows[0];
+    const senhaValida = await bcrypt.compare(senha, user.senha);
+
+    if (!senhaValida) {
+      console.log('Senha inválida para:', usuario);
+      return res.status(401).json({ error: 'Usuário ou senha inválidos' });
+    }
+
+    const token = jwt.sign(
+      { id: user.id, usuario: user.usuario, nivel: user.nivel },
+      process.env.JWT_SECRET,
+      { expiresIn: '8h' }
+    );
+
+    console.log('Login bem-sucedido:', usuario);
+    res.json({
+      token,
+      usuario: { id: user.id, nome: user.nome, nivel: user.nivel }
+    });
+  } catch (error) {
+    console.error('Erro no login:', error);
+    res.status(500).json({ error: 'Erro no servidor: ' + error.message });
+  }
+};
+6. Frontend - Configuração
+frontend/.env:
+
+env
+VITE_API_URL=http://localhost:3333/api
+frontend/src/services/api.js:
+
+javascript
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+});
+
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
+export default api;
+7. Script para testar a API (test-api.js)
+Crie test-api.js na raiz:
+
+javascript
+import axios from 'axios';
+
+const API_URL = 'http://localhost:3333/api';
+
+async function testAPI() {
+  console.log('🧪 Testando API do Auto Peças\n');
+  
+  // Testar login
+  try {
+    console.log('1. Testando login...');
+    const login = await axios.post(`${API_URL}/auth/login`, {
+      usuario: 'admin',
+      senha: '123456'
+    });
+    
+    console.log('✅ Login bem-sucedido!');
+    console.log('   Token:', login.data.token.substring(0, 50) + '...');
+    console.log('   Usuário:', login.data.usuario.nome);
+    
+    const token = login.data.token;
+    
+    // Testar listar usuários
+    console.log('\n2. Testando listagem de usuários...');
+    const usuarios = await axios.get(`${API_URL}/usuarios`, {
+      headers: { Authorization: `Bearer ${token}` }
+    });
+    
+    console.log('✅ Usuários carregados:', usuarios.data.length);
+    usuarios.data.forEach(u => {
+      console.log(`   - ${u.nome} (${u.usuario}) - ${u.nivel}`);
+    });
+    
+    console.log('\n🎉 Todos os testes passaram!');
+    
+  } catch (error) {
+    console.error('❌ Erro:', error.response?.data || error.message);
+  }
+}
+
+testAPI();
+8. Comandos para rodar tudo
+bash
+# Terminal 1 - Backend
+cd backend
+npm install express pg dotenv cors bcryptjs jsonwebtoken
+npm install -D nodemon
+npm run dev
+
+# Terminal 2 - Frontend  
+cd frontend
+npm install
+npm install axios react-router-dom
+npm run dev
+
+# Terminal 3 - Teste (opcional)
+node test-api.js
+🌐 Acessar o Sistema
+Frontend: http://localhost:5173
+
+Login:
+
+Usuário: admin
+
+Senha: 123456
+
+✅ Verificação Rápida
+Para confirmar que está tudo certo, o backend deve mostrar:
+
+text
+🚀 Servidor rodando na porta 3333
+📊 Banco: Supabase
+🔗 URL: http://localhost:3333
+O frontend deve abrir a tela de login.
+
+🎯 Próximo Passo
+Depois de testar o login, me avise se funcionou! Aí podemos implementar:
+
+Cadastro de Clientes
+
+Cadastro de Peças
+
+Módulo de Vendas
+
+Dashboard com Gráficos
+
+Qualquer erro, me mostre a mensagem que aparece que eu ajudo a resolver!
+
+npm : O arquivo C:\Program Files\nodejs\npm.ps1 não pode ser carregado porque a execução de scripts foi desabilitada
+neste sistema. Para obter mais informações, consulte about_Execution_Policies em
+https://go.microsoft.com/fwlink/?LinkID=135170.
+No linha:1 caractere:1
++ npm install pg dotenv
++ ~~~
+    + CategoryInfo          : ErrodeSegurança: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+Reading
+Reading
+Esse erro é de permissão do PowerShell no Windows. Vou te ajudar a resolver rapidamente!
+
+🔧 Solução Rápida (Recomendada)
+Opção 1: Usar CMD no lugar do PowerShell (MAIS FÁCIL)
+Abra o CMD (Prompt de Comando) em vez do PowerShell:
+
+Pressione Win + R
+
+Digite cmd e pressione Enter
+
+Navegue até sua pasta: cd C:\caminho\do\seu\projeto
+
+Execute os comandos normalmente:
+
+bash
+cd backend
+npm install express pg dotenv cors bcryptjs jsonwebtoken
+npm install -D nodemon
+Opção 2: Liberar execução de scripts no PowerShell (Como Administrador)
+Abra o PowerShell como Administrador:
+
+Clique com botão direito no ícone do PowerShell
+
+Escolha "Executar como administrador"
+
+Execute este comando:
+
+powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Confirme com S (Sim)
+
+Feche e reabra o PowerShell normalmente
+
+Opção 3: Usar Git Bash (Se tiver Git instalado)
+Abra o Git Bash (pesquise no menu iniciar)
+
+Execute os comandos normalmente:
+
+bash
+cd backend
+npm install express pg dotenv cors bcryptjs jsonwebtoken
+📝 Passo a Passo Detalhado (Usando CMD)
+1. Abrir CMD e criar o projeto
+cmd
+# Abrir CMD (Win + R, digitar "cmd")
+cd C:\
+mkdir autopecas-system
+cd autopecas-system
+2. Configurar Backend
+cmd
+# Criar backend
+mkdir backend
+cd backend
+
+# Criar package.json
+echo {} > package.json
+
+# Instalar dependências
+npm install express pg dotenv cors bcryptjs jsonwebtoken express-validator multer
+npm install -D nodemon
+3. Criar os arquivos manualmente
+Como está no CMD, você pode criar os arquivos usando o bloco de notas:
+
+cmd
+# Criar arquivo .env
+notepad .env
+Cole o conteúdo:
+
+text
+PORT=3333
+SUPABASE_URL=https://qxjtyvtyqwnxxmrckpmt.supabase.co
+SUPABASE_KEY=sb_publishable_EEaCxGn1LxuKIqd_N3t9Bg_oXg1d958
+JWT_SECRET=autopecas_super_secret_key_2024
+cmd
+# Criar pastas
+mkdir controllers routes models middlewares database
+
+# Criar server.js
+notepad server.js
+4. Script para criar todos os arquivos rapidamente
+Salve este arquivo como criar-arquivos.bat na pasta backend:
+
+batch
+@echo off
+echo Criando arquivos do backend...
+
+REM Criar database/supabase.js
+echo import pkg from 'pg'; > database\supabase.js
+echo const { Pool } = pkg; >> database\supabase.js
+echo import dotenv from 'dotenv'; >> database\supabase.js
+echo dotenv.config(); >> database\supabase.js
+echo. >> database\supabase.js
+echo const pool = new Pool({ >> database\supabase.js
+echo   connectionString: process.env.SUPABASE_URL + "?apikey=" + process.env.SUPABASE_KEY, >> database\supabase.js
+echo   ssl: { rejectUnauthorized: false } >> database\supabase.js
+echo }); >> database\supabase.js
+echo. >> database\supabase.js
+echo export default pool; >> database\supabase.js
+
+REM Criar middleware/auth.js
+echo import jwt from 'jsonwebtoken'; > middlewares\auth.js
+echo. >> middlewares\auth.js
+echo export function authMiddleware(req, res, next) { >> middlewares\auth.js
+echo   const token = req.headers.authorization?.split(' ')[1]; >> middlewares\auth.js
+echo   if (!token) return res.status(401).json({ error: 'Token não fornecido' }); >> middlewares\auth.js
+echo   try { >> middlewares\auth.js
+echo     const decoded = jwt.verify(token, process.env.JWT_SECRET); >> middlewares\auth.js
+echo     req.usuario = decoded; >> middlewares\auth.js
+echo     next(); >> middlewares\auth.js
+echo   } catch (error) { >> middlewares\auth.js
+echo     return res.status(401).json({ error: 'Token inválido' }); >> middlewares\auth.js
+echo   } >> middlewares\auth.js
+echo } >> middlewares\auth.js
+
+echo Arquivos criados com sucesso!
+pause
+Execute o arquivo:
+
+cmd
+criar-arquivos.bat
+🚀 Script Completamente Automatizado
+Salve este script como setup.bat na pasta raiz autopecas-system:
+
+batch
+@echo off
+echo ========================================
+echo    Auto Peças System - Instalação
+echo ========================================
+echo.
+
+echo [1/4] Criando estrutura de pastas...
+mkdir backend 2>nul
+mkdir frontend 2>nul
+
+echo [2/4] Configurando Backend...
+cd backend
+call npm init -y
+call npm install express pg dotenv cors bcryptjs jsonwebtoken
+call npm install -D nodemon
+
+echo [3/4] Configurando Frontend...
+cd ..\frontend
+call npm create vite@latest . -- --template react
+call npm install
+call npm install axios react-router-dom
+call npm install -D tailwindcss postcss autoprefixer
+call npx tailwindcss init -p
+
+echo [4/4] Configuração concluída!
+echo.
+echo ========================================
+echo    PRÓXIMOS PASSOS:
+echo ========================================
+echo 1. Execute o SQL no Supabase (já fornecido)
+echo 2. Configure os arquivos .env
+echo 3. Rode: cd backend ^&^& npm run dev
+echo 4. Rode: cd frontend ^&^& npm run dev
+echo.
+pause
+Execute como Administrador (clique direito no arquivo > "Executar como administrador")
+
+✅ Verificação Rápida
+Depois de instalar, teste:
+
+cmd
+# Verificar versão do Node
+node --version
+
+# Verificar versão do npm
+npm --version
+
+# Testar backend
+cd backend
+npm run dev
+🎯 Se ainda der erro
+Alternativa: Usar WSL (Windows Subsystem for Linux)
+Instale o WSL:
+
+powershell
+# No PowerShell como Admin
+wsl --install
+Rode Ubuntu e dentro dele:
+
+bash
+sudo apt update
+sudo apt install nodejs npm
+# Depois continue com os comandos Linux normais
+Ou use o PowerShell com política temporária:
+powershell
+# Apenas para esta sessão
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+# Agora execute npm
+npm install
+📌 Resumo do Problema
+Causa: PowerShell do Windows bloqueia execução de scripts por segurança
+
+Solução mais fácil: Use CMD em vez de PowerShell
+
+Solução definitiva: Altere a política de execução (Opção 2)
+
+Qual método você quer usar? Me avise qual funcionou para você!
+
+Cannot GET /
+Esse erro "Cannot GET /" significa que o servidor está rodando, mas não tem uma rota definida para a raiz ("/"). Vamos corrigir!
+
+🔧 Solução Rápida
+1. Primeiro, verifique se o backend está rodando:
+bash
+# No terminal do backend, deveria mostrar:
+🚀 Servidor rodando na porta 3333
+2. Teste a API no navegador:
+Abra o navegador e acesse:
+
+http://localhost:3333/api/health - Deve mostrar JSON com status OK
+
+http://localhost:3333/api/auth/login - Não vai funcionar (precisa POST)
+
+3. Corrigir o erro "Cannot GET /"
+Isso acontece porque você acessou http://localhost:3333/ (só a raiz). O backend só responde em rotas específicas.
+
+📝 Adicione esta rota no backend
+Edite o arquivo backend/server.js e adicione uma rota para a raiz:
+
+javascript
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import authRoutes from './routes/authRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
+
+dotenv.config();
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// 🔹 ADICIONE ESTA LINHA PARA A RAIZ
+app.get('/', (req, res) => {
+  res.json({
+    message: 'API Auto Peças Sistemas',
+    version: '1.0.0',
+    endpoints: {
+      health: 'GET /api/health',
+      login: 'POST /api/auth/login',
+      usuarios: 'GET /api/usuarios (requer token)'
+    }
+  });
+});
+
+// Rotas
+app.use('/api/auth', authRoutes);
+app.use('/api/usuarios', usuarioRoutes);
+
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date(), database: 'Supabase' });
+});
+
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor rodando na porta ${PORT}`);
+  console.log(`📊 Banco: Supabase`);
+  console.log(`🔗 API: http://localhost:${PORT}`);
+  console.log(`📖 Documentação: http://localhost:${PORT}/`);
+});
+🧪 Testar as rotas disponíveis
+Depois de reiniciar o backend, teste no navegador:
+
+Rotas que funcionam (GET):
+✅ http://localhost:3333/ - Mostra documentação
+
+✅ http://localhost:3333/api/health - Verifica saúde do sistema
+
+Rotas que precisam de método POST:
+📝 http://localhost:3333/api/auth/login - Precisa enviar usuário/senha
+
+🔄 Reiniciar o Backend
+bash
+# Pare o servidor (Ctrl + C)
+# Depois rode novamente:
+npm run dev
+🌐 O que você DEVE acessar:
+Para o Sistema Completo:
+FRONTEND (React) - É a interface do usuário:
+
+Acesse: http://localhost:5173
+
+É onde você faz login, cadastra clientes, etc.
+
+BACKEND (API) - É só para desenvolvedores:
+
+Acesse: http://localhost:3333/api/health (para testar se está vivo)
+
+Não use no navegador para outras rotas
+
+📊 Fluxo Correto:
+text
+Navegador → http://localhost:5173 (Frontend React)
+                        ↓
+                 Faz requisições para
+                        ↓
+         http://localhost:3333/api (Backend API)
+✅ O que você deve fazer agora:
+Opção A: Testar o Frontend (Recomendado)
+bash
+# Terminal 1 - Backend (já deve estar rodando)
+cd backend
+npm run dev
+
+# Terminal 2 - Frontend (abra um novo terminal)
+cd frontend
+npm run dev
+Acesse: http://localhost:5173 - Deve aparecer a tela de login!
+
+Opção B: Testar só a API com Postman/Insomnia
+Use um programa como Postman ou Insomnia para testar:
+
+Login:
+
+URL: http://localhost:3333/api/auth/login
+
+Método: POST
+
+Body (JSON):
+
+json
+{
+  "usuario": "admin",
+  "senha": "123456"
+}
+Opção C: Testar com curl no terminal
+Abra um NOVO terminal e execute:
+
+bash
+# Testar health
+curl http://localhost:3333/api/health
+
+# Testar login
+curl -X POST http://localhost:3333/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d "{\"usuario\":\"admin\",\"senha\":\"123456\"}"
+🎯 Problemas Comuns e Soluções
+Erro: Frontend não abre em http://localhost:5173
+bash
+# Verifique se o Vite está rodando
+cd frontend
+npm run dev
+
+# Deve mostrar:
+# VITE v5.0.0 ready in 500 ms
+# ➜ Local: http://localhost:5173/
+Erro: Backend não reconhece as rotas
+bash
+# Verifique se os arquivos existem:
+dir backend\controllers
+dir backend\routes
+
+# Se faltar, crie o arquivo authController.js:
+notepad backend\controllers\authController.js
+Erro de CORS no frontend
+Adicione no backend/server.js:
+
+javascript
+app.use(cors({
+  origin: 'http://localhost:5173',  // Permite frontend React
+  credentials: true
+}));
+📌 Resumo
+Cannot GET / = Acessou a API diretamente no navegador (rota não existe)
+
+Use o frontend React em http://localhost:5173
+
+A API é apenas para o frontend consumir, não para navegador
+
+Agora tente acessar http://localhost:5173 e me diga o que aparece!
+
+{"message":"API Auto Peças Sistemas","version":"1.0.0","endpoints":{"health":"GET /api/health","login":"POST /api/auth/login","usuarios":"GET /api/usuarios (requer token)"}}
+
+{"status":"OK","timestamp":"2026-05-21T01:24:48.267Z","database":"Supabase"}
+
+Cannot GET /api/auth/login
+Perfeito! O backend está funcionando corretamente. O erro "Cannot GET /api/auth/login" é normal porque essa rota aceita apenas o método POST, não GET.
+
+✅ Status do seu sistema:
+✅ Backend rodando - API responde corretamente
+
+✅ Banco conectado - Supabase funcionando
+
+⚠️ Rota /api/auth/login - Funciona apenas com POST (não GET)
+
+🚀 Agora vamos testar o login corretamente
+Método 1: Usar o Frontend React (Recomendado)
+Inicie o frontend:
+
+bash
+# Abra um NOVO terminal (CMD)
+cd frontend
+npm run dev
+Acesse: http://localhost:5173
+
+Deverá ver a tela de login do sistema!
+
+Método 2: Testar com curl (linha de comando)
+Abra outro terminal e execute:
+
+bash
+curl -X POST http://localhost:3333/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d "{\"usuario\":\"admin\",\"senha\":\"123456\"}"
+Método 3: Criar uma página de teste HTML
+Crie um arquivo teste-login.html:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Login Auto Peças</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input, button { margin: 10px; padding: 8px; }
+        button { background: blue; color: white; border: none; cursor: pointer; }
+        pre { background: #f0f0f0; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Teste API Auto Peças</h1>
+    <div>
+        <input type="text" id="usuario" placeholder="Usuário" value="admin">
+        <input type="password" id="senha" placeholder="Senha" value="123456">
+        <button onclick="testarLogin()">Testar Login</button>
+    </div>
+    <pre id="resultado"></pre>
+
+    <script>
+        async function testarLogin() {
+            const usuario = document.getElementById('usuario').value;
+            const senha = document.getElementById('senha').value;
+            
+            const resultado = document.getElementById('resultado');
+            resultado.textContent = 'Testando login...';
+            
+            try {
+                const response = await fetch('http://localhost:3333/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ usuario, senha })
+                });
+                
+                const data = await response.json();
+                resultado.textContent = JSON.stringify(data, null, 2);
+                
+                if (response.ok) {
+                    alert('✅ Login bem-sucedido! Token: ' + data.token.substring(0, 50) + '...');
+                } else {
+                    alert('❌ Erro: ' + (data.error || 'Falha no login'));
+                }
+            } catch (error) {
+                resultado.textContent = 'Erro: ' + error.message;
+                alert('❌ Erro ao conectar: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html>
+Salve o arquivo e abra no navegador.
+
+🎯 Verificar se o Frontend React está funcionando
+Se você ainda não criou o frontend:
+bash
+# Criar frontend (na pasta autopecas-system)
+npm create vite@latest frontend -- --template react
+cd frontend
+npm install
+npm install axios react-router-dom
+npm run dev
+Se o frontend já existe mas não abre:
+bash
+# Verifique se está na porta correta
+# Deve mostrar:
+VITE v5.0.0  ready in 500 ms
+➜  Local:   http://localhost:5173/
+📋 Script para testar a API completa
+Crie testar-api.js:
+
+javascript
+import axios from 'axios';
+
+const API = 'http://localhost:3333/api';
+
+async function testarAPI() {
+    console.log('🧪 Testando API Auto Peças\n');
+    
+    // 1. Testar health
+    console.log('1. Health Check:');
+    const health = await axios.get(`${API}/health`);
+    console.log('   ✅', health.data);
+    
+    // 2. Testar login
+    console.log('\n2. Testando Login:');
+    try {
+        const login = await axios.post(`${API}/auth/login`, {
+            usuario: 'admin',
+            senha: '123456'
+        });
+        console.log('   ✅ Login OK!');
+        console.log('   👤 Usuário:', login.data.usuario.nome);
+        console.log('   🔑 Token:', login.data.token.substring(0, 50) + '...');
+        
+        // 3. Testar listar usuários (requer token)
+        console.log('\n3. Listando usuários:');
+        const usuarios = await axios.get(`${API}/usuarios`, {
+            headers: { Authorization: `Bearer ${login.data.token}` }
+        });
+        console.log('   ✅ Encontrados', usuarios.data.length, 'usuários:');
+        usuarios.data.forEach(u => {
+            console.log(`      - ${u.nome} (${u.usuario}) - ${u.nivel}`);
+        });
+        
+    } catch (error) {
+        console.error('   ❌ Erro:', error.response?.data || error.message);
+    }
+}
+
+testarAPI();
+Execute com:
+
+bash
+node testar-api.js
+✅ O que cada erro significa:
+Erro	Significado	Solução
+Cannot GET /api/auth/login	✅ Normal (rota é POST)	Use POST em vez de GET
+Cannot GET /	✅ Corrigido (rota existe agora)	Acesse /api/health
+404 Not Found	Rota não existe	Verifique URL e método
+ECONNREFUSED	Backend não está rodando	Rode npm run dev no backend
+🎯 Próximos passos:
+Inicie o frontend React (se ainda não iniciou)
+
+Acesse http://localhost:5173
+
+Faça login com admin / 123456
+
+Teste o sistema (cadastrar usuários, etc)
+
+Me diga:
+
+O frontend está rodando? Acessou http://localhost:5173?
+
+Apareceu a tela de login?
+
+Conseguiu fazer login?
+
+Se aparecer qualquer erro, me mostre a mensagem completa!
+
+{"error":"Erro no servidor: getaddrinfo ENOTFOUND base"}curl: (3) URL rejected: Bad hostname
+Esse erro indica que o backend não está conseguindo conectar ao Supabase. O problema está na string de conexão do banco de dados.
+
+🔧 Corrigir a conexão com Supabase
+1. Verifique o arquivo .env no backend
+Abra backend/.env e corrija:
+
+env
+PORT=3333
+SUPABASE_URL=https://qxjtyvtyqwnxxmrckpmt.supabase.co
+SUPABASE_KEY=sb_publishable_EEaCxGn1LxuKIqd_N3t9Bg_oXg1d958
+JWT_SECRET=autopecas_super_secret_key_2024
+Importante: O SUPABASE_URL deve começar com https:// e NÃO pode ter barra no final.
+
+2. Corrigir o arquivo database/supabase.js
+Substitua o conteúdo de backend/database/supabase.js:
+
+javascript
+import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+// Configuração correta para Supabase
+const pool = new Pool({
+  host: 'aws-0-sa-east-1.pooler.supabase.com',  // Host do Supabase
+  port: 5432,
+  database: 'postgres',
+  user: 'postgres.qxjtyvtyqwnxxmrckpmt',
+  password: 'AutoPecas@2024',  // Use a senha que você criou no Supabase
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+3. Ou usar connection string (recomendado)
+Alternativa mais simples, use database/supabase.js assim:
+
+javascript
+import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+// Connection string completa
+const connectionString = 'postgresql://postgres.qxjtyvtyqwnxxmrckpmt:AutoPecas@2024@aws-0-sa-east-1.pooler.supabase.com:5432/postgres';
+
+const pool = new Pool({
+  connectionString: connectionString,
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+4. Obter a senha correta do Supabase
+Se você não lembra a senha do banco:
+
+Acesse: https://supabase.com/dashboard/project/qxjtyvtyqwnxxmrckpmt
+
+Vá em Project Settings (engrenagem)
+
+Clique em Database
+
+Procure por Connection string
+
+Copie a string URI completa
+
+A senha é a que você definiu ao criar o projeto
+
+5. Testar a conexão
+Crie backend/test-db.js:
+
+javascript
+import pool from './database/supabase.js';
+
+async function testConnection() {
+  try {
+    console.log('🔄 Testando conexão com Supabase...');
+    
+    // Teste simples
+    const result = await pool.query('SELECT NOW() as time, current_database() as db');
+    console.log('✅ Conectado com sucesso!');
+    console.log('📅 Hora do servidor:', result.rows[0].time);
+    console.log('💾 Banco:', result.rows[0].db);
+    
+    // Verificar usuários
+    const users = await pool.query('SELECT COUNT(*) FROM usuarios');
+    console.log('👥 Total de usuários:', users.rows[0].count);
+    
+  } catch (error) {
+    console.error('❌ Erro de conexão:', error.message);
+    console.error('\n🔧 Verifique:');
+    console.error('1. Se a senha do banco está correta');
+    console.error('2. Se o projeto Supabase está ativo');
+    console.error('3. Se as credenciais estão corretas');
+  } finally {
+    process.exit();
+  }
+}
+
+testConnection();
+Execute:
+
+bash
+cd backend
+node test-db.js
+🔄 Se continuar dando erro, use esta configuração alternativa
+Instalar dependência adicional:
+bash
+npm install @supabase/supabase-js
+Novo database/supabase.js usando cliente Supabase:
+javascript
+import { createClient } from '@supabase/supabase-js';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// Função de query para manter compatibilidade com o código existente
+export const pool = {
+  query: async (text, params) => {
+    // Para SELECT
+    if (text.toLowerCase().includes('select')) {
+      const { data, error } = await supabase
+        .from(text.match(/FROM (\w+)/)[1])
+        .select('*');
+      
+      if (error) throw error;
+      return { rows: data };
+    }
+    
+    // Para INSERT/UPDATE/DELETE você precisará adaptar
+    throw new Error('Método não implementado para esta query');
+  }
+};
+
+export default { query: pool.query };
+📋 Solução mais simples: Resetar e usar string correta
+Passo 1: Obter a connection string correta
+No Supabase:
+
+Project Settings > Database
+
+Em "Connection string" > "URI"
+
+Copie a string completa (parece com: postgresql://postgres.qxjtyvtyqwnxxmrckpmt:senha@aws-0-sa-east-1.pooler.supabase.com:5432/postgres)
+
+Passo 2: Atualizar .env
+env
+PORT=3333
+DATABASE_URL=postgresql://postgres.qxjtyvtyqwnxxmrckpmt:SUA_SENHA@aws-0-sa-east-1.pooler.supabase.com:5432/postgres
+JWT_SECRET=autopecas_super_secret_key_2024
+Passo 3: Atualizar database/supabase.js
+javascript
+import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+🎯 Resumo do problema
+O erro getaddrinfo ENOTFOUND base significa:
+
+A string de conexão está mal formatada
+
+O host do banco não foi encontrado
+
+Provavelmente faltou o https:// ou a URL correta
+
+✅ Verificação final
+Depois de corrigir, teste:
+
+bash
+# Testar conexão
+node backend/test-db.js
+
+# Se funcionar, rodar backend
+cd backend
+npm run dev
+
+# Em outro terminal, testar login
+curl -X POST http://localhost:3333/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d "{\"usuario\":\"admin\",\"senha\":\"123456\"}"
+Me mande a mensagem de erro exata que aparece quando você roda node test-db.js para eu te ajudar melhor!
+
+senha para o projeto é An_99092137*
+Perfeito! Agora tenho a senha correta do seu Supabase. Vamos corrigir a configuração.
+
+🔧 Configuração Correta com a Senha
+1. Atualize o arquivo backend/.env
+env
+PORT=3333
+SUPABASE_URL=https://qxjtyvtyqwnxxmrckpmt.supabase.co
+SUPABASE_KEY=sb_publishable_EEaCxGn1LxuKIqd_N3t9Bg_oXg1d958
+DB_PASSWORD=An_99092137*
+JWT_SECRET=autopecas_super_secret_key_2024
+2. Corrija o arquivo backend/database/supabase.js
+javascript
+import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+// Configuração correta usando a senha fornecida
+const pool = new Pool({
+  host: 'aws-0-sa-east-1.pooler.supabase.com',
+  port: 5432,
+  database: 'postgres',
+  user: 'postgres.qxjtyvtyqwnxxmrckpmt',
+  password: 'An_99092137*',
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+3. Ou usar connection string (mais fácil)
+javascript
+import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+// Connection string completa com a senha
+const connectionString = 'postgresql://postgres.qxjtyvtyqwnxxmrckpmt:An_99092137*@aws-0-sa-east-1.pooler.supabase.com:5432/postgres';
+
+const pool = new Pool({
+  connectionString: connectionString,
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+4. Script para testar a conexão
+Crie backend/test-conexao.js:
+
+javascript
+import pool from './database/supabase.js';
+
+async function testarConexao() {
+  console.log('🔄 Testando conexão com Supabase...');
+  console.log('📊 Host: aws-0-sa-east-1.pooler.supabase.com');
+  console.log('👤 Usuário: postgres.qxjtyvtyqwnxxmrckpmt');
+  console.log('🔐 Senha: ********');
+  
+  try {
+    // Testar conexão
+    const result = await pool.query('SELECT NOW() as hora, current_database() as banco, version() as versao');
+    console.log('\n✅ CONEXÃO BEM-SUCEDIDA!');
+    console.log(`📅 Hora do servidor: ${result.rows[0].hora}`);
+    console.log(`💾 Banco de dados: ${result.rows[0].banco}`);
+    
+    // Verificar tabelas
+    const tables = await pool.query(`
+      SELECT table_name 
+      FROM information_schema.tables 
+      WHERE table_schema = 'public' 
+      ORDER BY table_name
+    `);
+    
+    console.log(`\n📋 Tabelas encontradas: ${tables.rows.length}`);
+    tables.rows.forEach(t => console.log(`   - ${t.table_name}`));
+    
+    // Verificar usuário admin
+    const admin = await pool.query(
+      "SELECT id, nome, usuario, nivel FROM usuarios WHERE usuario = 'admin'"
+    );
+    
+    if (admin.rows.length > 0) {
+      console.log('\n👑 Usuário admin encontrado:');
+      console.log(`   Nome: ${admin.rows[0].nome}`);
+      console.log(`   Usuário: ${admin.rows[0].usuario}`);
+      console.log(`   Nível: ${admin.rows[0].nivel}`);
+    } else {
+      console.log('\n⚠️ Usuário admin não encontrado!');
+      console.log('   Execute o SQL para criar o admin');
+    }
+    
+  } catch (error) {
+    console.error('\n❌ ERRO DE CONEXÃO:', error.message);
+    console.error('\n🔧 Verifique:');
+    console.error('1. Se a senha está correta: An_99092137*');
+    console.error('2. Se o projeto Supabase está ativo');
+    console.error('3. Se as credenciais estão corretas');
+    console.error('\nDetalhes técnicos:');
+    console.error(error);
+  } finally {
+    process.exit();
+  }
+}
+
+testarConexao();
+Execute o teste:
+
+bash
+cd backend
+node test-conexao.js
+5. Se funcionar, inicie o backend
+bash
+npm run dev
+6. Testar login
+Em outro terminal:
+
+bash
+curl -X POST http://localhost:3333/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d "{\"usuario\":\"admin\",\"senha\":\"123456\"}"
+📋 Script completo para criar tudo de uma vez
+Crie setup-completo.js na raiz do projeto:
+
+javascript
+import { exec } from 'child_process';
+import fs from 'fs';
+import path from 'path';
+
+console.log('🚀 Configurando Auto Peças System...\n');
+
+// Criar arquivo .env do backend
+const envBackend = `PORT=3333
+SUPABASE_URL=https://qxjtyvtyqwnxxmrckpmt.supabase.co
+SUPABASE_KEY=sb_publishable_EEaCxGn1LxuKIqd_N3t9Bg_oXg1d958
+DB_PASSWORD=An_99092137*
+JWT_SECRET=autopecas_super_secret_key_2024
+`;
+
+fs.writeFileSync('backend/.env', envBackend);
+console.log('✅ backend/.env criado');
+
+// Criar database/supabase.js corrigido
+const supabaseDb = `import pkg from 'pg';
+const { Pool } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
+
+const pool = new Pool({
+  host: 'aws-0-sa-east-1.pooler.supabase.com',
+  port: 5432,
+  database: 'postgres',
+  user: 'postgres.qxjtyvtyqwnxxmrckpmt',
+  password: 'An_99092137*',
+  ssl: { rejectUnauthorized: false }
+});
+
+export default pool;
+`;
+
+fs.writeFileSync('backend/database/supabase.js', supabaseDb);
+console.log('✅ backend/database/supabase.js atualizado');
+
+console.log('\n🎯 Próximos passos:');
+console.log('1. cd backend');
+console.log('2. npm install pg dotenv');
+console.log('3. node test-conexao.js');
+console.log('4. npm run dev');
+console.log('\n📌 Lembre-se:');
+console.log('- Usuário: admin');
+console.log('- Senha: 123456');
+🔄 Se ainda tiver erro
+Opção: Instalar dependências novamente
+bash
+cd backend
+npm install pg dotenv express cors bcryptjs jsonwebtoken
+Opção: Usar modo de debug
+Modifique backend/server.js para mostrar mais detalhes:
+
+javascript
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import authRoutes from './routes/authRoutes.js';
+import pool from './database/supabase.js';
+
+dotenv.config();
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Testar conexão ao iniciar
+pool.connect((err, client, release) => {
+  if (err) {
+    console.error('❌ Erro ao conectar no banco:', err.message);
+  } else {
+    console.log('✅ Conectado ao Supabase com sucesso!');
+    release();
+  }
+});
+
+// Rotas
+app.use('/api/auth', authRoutes);
+
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor rodando na porta ${PORT}`);
+});
+✅ Verificação final
+Execute os comandos na ordem:
+
+bash
+# 1. Testar conexão
+cd backend
+node test-conexao.js
+
+# 2. Se funcionar, iniciar servidor
+npm run dev
+
+# 3. Testar login (novo terminal)
+curl -X POST http://localhost:3333/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d "{\"usuario\":\"admin\",\"senha\":\"123456\"}"
+Execute node test-conexao.js e me diga o que aparece!
